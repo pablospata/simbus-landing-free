@@ -1,0 +1,14 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="mail_icon">
+<rect id="Rectangle" width="40" height="40" rx="8" fill="url(#paint0_linear_0_625)"/>
+<g id="Group">
+<path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M12 7C11.4477 7 11 7.44771 11 8V19.1538L8.4741 17.7937C7.80787 17.435 7 17.9175 7 18.6742V33C7 33.5523 7.44772 34 8 34H32C32.5523 34 33 33.5523 33 33V18.6742C33 17.9175 32.1921 17.435 31.5259 17.7937L29 19.1538V8C29 7.44771 28.5523 7 28 7H12ZM27 20.2308V9H13V20.2308L19.5259 23.7447C19.8219 23.9041 20.1781 23.9041 20.4741 23.7447L27 20.2308ZM24 14H16V12H24V14ZM16 18H24V16H16V18Z" fill="white"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_625" x1="0" y1="0" x2="0" y2="40" gradientUnits="userSpaceOnUse">
+<stop stop-color="#9B66FF"/>
+<stop offset="1" stop-color="#6236FF"/>
+</linearGradient>
+</defs>
+</svg>
