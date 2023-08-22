@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
     <link rel="stylesheet" href="style-gratis.css">
-    <title>Consigue tu Web Gratis - SimBus.io</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+    <title>Tu Web Gratis - SimBus.io</title>
 
     <script src="./script.js" defer></script>
 </head>
@@ -105,16 +107,16 @@
 
         <section id="services" class="white">
             <div class="columna why">
-                <h2>Top four the reason why you should <span>choosing </span>us.</h2>
-                <p>In quo quaerimus, non numquam eius modi tempora incidunt.</p>
+                <h2>Tres razones por las cuales debes <span>elegirnos</span></h2>
+                <p>Te contamos por somos actualmente la mejor opción para tu Web.</p>
 
                 <div class="service-card">
                     <div class="icon">
                         <img src="./assets/icons/experience-color.svg" alt="Feature Icon">
                     </div>
                     <div class="content why">
-                        <h3>Experience</h3>
-                        <p>Probabo, inquit, modo ista sis aequitate, quam interrogare aut in voluptate ponit.</p>
+                        <h3>Experiencia</h3>
+                        <p>Nuestro conocimiento es el fruto de innumerables proyectos y desafíos superados.</p>
                     </div>
                 </div>
                 <div class="service-card">
@@ -122,8 +124,8 @@
                         <img src="./assets/icons/comunication-color.svg" alt="Feature Icon">
                     </div>
                     <div class="content why">
-                        <h3>Easy Communication</h3>
-                        <p>Probabo, inquit, modo ista sis aequitate, quam nihil impedit, quo.</p>
+                        <h3>Comunicación Eficaz</h3>
+                        <p>Estarás hablando continuamente con personas, no maquinas ni ChatBots.</p>
                     </div>
                 </div>
                 <div class="service-card">
@@ -131,8 +133,8 @@
                         <img src="./assets/icons/confortable-color.svg" alt="Feature Icon">
                     </div>
                     <div class="content why">
-                        <h3>Comfortable</h3>
-                        <p>Alii autem, quibus ego cum teneam sententiam, quid bonum esse fugiendum.</p>
+                        <h3>Colaboración</h3>
+                        <p>Nos enfocamos en entender y priorizar tus objetivos para ofrecerte soluciones a medida.</p>
                     </div>
                 </div>
                 <!-- <a class="button" href="#projects">Ver casos de éxito</a> -->
@@ -147,13 +149,61 @@
 
         <section id="cta">
             <h2>Deja tu correo y te asesoraremos hoy mismo. <span id="naranja">Es GRATIS</span></h2>
-            <form>
-                <div class="email-wrapper">
-                    <input type="email" name="email" id="email" placeholder="Ingrese su email">
-                    <button type="submit" class="cta-btn" onclick="sendWhatsAppMail()">Enviar</button>
-                </div>
-            </form>
+            <div class="cta-container-button">
+                <a class="button" href="#pricing">Quiero vender más</a>
+            </div>
+
         </section>
+
+        <section id="projects" class="white white2">
+
+            <div class="buttons-select">
+                <button class="select active">SimBus.io</button>
+                <button class="select">Websites</button>
+                <button class="select">Landing Pages</button>
+                <button class="select">E-commerce Sites</button>
+            </div>
+
+            <div class="project-container">
+                <div class="project1 small">
+                    <img src="./assets/projects/1.avif" alt="">
+                </div>
+                <div class="project2 small">
+                    <img src="./assets/projects/2.avif" alt="">
+                </div>
+                <div class="project3 medium">
+                    <img src="./assets/projects/3.avif" alt="">
+                </div>
+                <div class="project4 large">
+                    <img src="./assets/projects/4.avif" alt="">
+                </div>
+                <div class="project5 large">
+                    <img src="./assets/projects/5.avif" alt="">
+                </div>
+                <div class="project6 small">
+                    <img src="./assets/projects/6.avif" alt="">
+                </div>
+                <div class="project7 small">
+                    <img src="./assets/projects/7.avif" alt="">
+                </div>
+                <div class="project8 small">
+                    <img src="./assets/projects/8.avif" alt="">
+                </div>
+                <div class="project9 small">
+                    <img src="./assets/projects/9.avif" alt="">
+                </div>
+            </div>
+
+            <a class="button" href="#projects">Ver casos de éxito</a>
+
+            <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+
+        </section>
+
 
         <section id="testimonials" class="white2">
             <img src="./assets/icons/Bitmap.png" alt="">
@@ -203,41 +253,41 @@
             <div class="testimonial-cards">
                 <img src="./assets/icons/Combined Shape.svg" alt="">
                 <div class="testimonial-card">
-                    <p>Resolvieron todos mis problemas, tienen muy en claro su trabajo, lo entienden, y saben
-                        explicárselo a uno que no conoce mucho. </p>
+                    <p>Los chicos son súper amables, atendieron todas mis inquietudes, resolvieron todos mis problemas,
+                        tienen muy en claro su trabajo. </p>
                     <div class="testimonial-person">
                         <div class="testimonial-photo">
-                            <img src="./assets/testimonials/federico.jpg" alt="">
+                            <img src="./assets/testimonials/bruna.png" alt="">
                         </div>
                         <div class="testimonial-name-work">
-                            <h5>Federico Zabana</h5>
-                            <p>Emprendedor</p>
+                            <h5>Bruna Mello</h5>
+                            <p>Abogada</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
-                    <p>Nos asesoraron estupendamente, nos entendieron a la perfección y lograron en 5 días una web
-                        hermosa con propuestas súper acertadas.</p>
+                    <p>Trabajar con SimBus.io fue un placer. Desde el primer contacto hasta el final del recorrido, la
+                        experiencia fue inmejorable.</p>
                     <div class="testimonial-person">
                         <div class="testimonial-photo">
-                            <img src="./assets/testimonials/elizabeth.png" alt="">
+                            <img src="./assets/testimonials/gabriela.png" alt="">
                         </div>
                         <div class="testimonial-name-work">
-                            <h5>Elizabeth Segui Torres</h5>
-                            <p>Digital marketing</p>
+                            <h5>Gabriela Pizarro</h5>
+                            <p>Microemprendimiento</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
-                    <p>Excelente precio y calidad en el servicio. Entendimiento a la perfección de la necesidad de mi
-                        negocio. Recomendable al 100%.</p>
+                    <p>Excelente! Trabajan de manera rápida y responsable. Altamente recomendado, ingeniosos y
+                        detallistas, espero tratar de nuevo con ustedes pronto.</p>
                     <div class="testimonial-person">
                         <div class="testimonial-photo">
-                            <img src="./assets/testimonials/diego.png" alt="">
+                            <img src="./assets/testimonials/fernando.png" alt="">
                         </div>
                         <div class="testimonial-name-work">
-                            <h5>Diego García Bonetto</h5>
-                            <p>Tienda de Deportes </p>
+                            <h5>Fernando Díaz Carmona</h5>
+                            <p>Venta de Ropa</p>
                         </div>
                     </div>
                 </div>
@@ -276,8 +326,10 @@
                 <a class="button" href="#pricing">Quiero vender más</a>
             </div>
 
+
             <div class="oval-top-left"></div>
             <div class="oval-bottom-right"></div>
+
         </section>
 
         <section id="form" class="white2">
@@ -288,22 +340,28 @@
                 <div class="accordion-container">
                     <button class="accordion">¿Cómo funciona SimBus.io?</button>
                     <div class="panel">
-                        <p>SimBus.io es una plataforma digital gratuita creada para empoderar a las empresas de todo el mundo. Con nuestra plataforma, cualquiera puede crear página web y compartirla fácilmente con tus clientes </p>
+                        <p>SimBus.io es una plataforma digital gratuita creada para empoderar a las empresas de todo el
+                            mundo. Con nuestra plataforma, cualquiera puede crear página web y compartirla fácilmente
+                            con tus clientes </p>
                     </div>
-    
+
                     <button class="accordion">¿Es realmente gratis?</button>
                     <div class="panel">
-                        <p>¡Sí! Es de uso gratuito. Tiene todas las características que podrías necesitar para comenzar a vender tus productos.</p>
+                        <p>¡Sí! Es de uso gratuito. Tiene todas las características que podrías necesitar para comenzar
+                            a vender tus productos.</p>
                     </div>
-    
+
                     <button class="accordion">¿Cómo funciona la creación de mi Sitio Web?</button>
                     <div class="panel">
-                        <p>Debes dejar tus mail y/o teléfono para que uno de nuestros desarrolladores se ponga en contacto contigo y podemos empezar con el proceso de creación.</p>
+                        <p>Debes dejar tus mail y/o teléfono para que uno de nuestros desarrolladores se ponga en
+                            contacto contigo y podemos empezar con el proceso de creación.</p>
                     </div>
 
                     <button class="accordion">¿Puedo personalizar mi sitio web a mi gusto?</button>
                     <div class="panel">
-                        <p>Por supuesto. Una vez que uno de nuestros desarrolladores se ponga en contacto contigo, podrás detallar tus preferencias y requerimientos específicos para que el diseño y las funciones del sitio web se ajusten a tus necesidades y visión de marca.
+                        <p>Por supuesto. Una vez que uno de nuestros desarrolladores se ponga en contacto contigo,
+                            podrás detallar tus preferencias y requerimientos específicos para que el diseño y las
+                            funciones del sitio web se ajusten a tus necesidades y visión de marca.
 
                         </p>
                     </div>
@@ -311,7 +369,9 @@
                     <button class="accordion">¿Ofrecen soporte técnico en caso de problemas?
                     </button>
                     <div class="panel">
-                        <p>¡Claro! Contamos con un equipo de soporte técnico dedicado para ayudarte con cualquier inconveniente que puedas encontrar. Siempre estamos aquí para asegurarnos de que tu experiencia con SimBus.io sea la mejor posible.</p>
+                        <p>¡Claro! Contamos con un equipo de soporte técnico dedicado para ayudarte con cualquier
+                            inconveniente que puedas encontrar. Siempre estamos aquí para asegurarnos de que tu
+                            experiencia con SimBus.io sea la mejor posible.</p>
                     </div>
 
                 </div>
@@ -349,6 +409,49 @@
         </section>
     </main>
 
+    <footer>
+        <section>
+            <div class="content">
+                <div class="col1">
+                    <a href="#" class="logo">
+                        <p>Sim<span>Bus</span>.io</p>
+                    </a>
+                    <p class="text">Software Factory especializada y perfeccionada en Desarrollo y Programación Web.
+                    </p>
+                </div>
+                <div class="col2">
+                    <ul class="menu">
+                        <li><a class="active" href="./index.html">Inicio</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#testimonials">Testimonios</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col3">
+                    <ul class="menu">
+                        <li><a class="active" href="#">Documentos</a></li>
+                        <li><a href="#projects">Portfolio</a></li>
+                        <li><a href="#">Términos de uso</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#form">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col4">
+                    <ul class="menu">
+                        <li><a class="active" href="#">Direcciones</a></li>
+                        <li><a>Calle 9 Nro. 1073, Veinticinco de Mayo, <br>Buenos Aires, Argentina</a></li>
+                        <li><a href="https://wa.me/5492345400586?text=Hola,%20estoy%20interesado%20en%20el%20servicio%20de%20desarrollo%20web!
+                            " target="_blank">+54 9 2345 400586</a></li>
+                        <li><a href="#">info@SimBus.IO</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright SimBus.io 2023</p>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>

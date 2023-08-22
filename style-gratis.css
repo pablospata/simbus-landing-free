@@ -190,7 +190,7 @@ button.select.active:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: .5rem;
+    gap: 1rem;
     margin-top: 2rem;
 }
 
@@ -227,6 +227,7 @@ button.select.active:hover {
     border-radius: 2rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    padding: .5rem;
 }
 
 #hero form #submit:hover {
@@ -401,6 +402,135 @@ section.white .button:hover {
     background-color: #6236FF;
 }
 
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;    
+    padding-bottom: 5vh;
+}
+
+
+.project-container>div {
+    background-color: #bebebe;
+    border: 1rem solid #5b7bfd63;
+    box-shadow: 0px 10px 20px 0px rgba(46, 51, 71, 0.08);
+    width: 100%; /* Cambio importante aquí */
+    height: 100%; /* Cambio importante aquí */
+    transition: transform 0.3s ease-in-out; 
+}
+
+.project-container>div>img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.project-container>div:hover{
+    transform: scale(1.03);
+}
+
+.project-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1rem 1rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "project1 project3 project4 project4"
+        "project2 project3 project4 project4"
+        "project5 project5 project6 project7"
+        "project5 project5 project8 project9";
+}
+
+.small img, .medium img, .large img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 100%; /* Asegura que la imagen ocupe toda la altura del contenedor */
+    object-fit: cover; /* Hace que la imagen se recorte y se ajuste al tamaño de su contenedor */
+}
+
+.project1 {
+    grid-area: project1;
+}
+
+.project2 {
+    grid-area: project2;
+}
+
+.project3 {
+    grid-area: project3;
+}
+
+.project4 {
+    grid-area: project4;
+}
+
+.project5 {
+    grid-area: project5;
+}
+
+.project6 {
+    grid-area: project6;
+}
+
+.project7 {
+    grid-area: project7;
+}
+
+.project8 {
+    grid-area: project8;
+}
+
+.project9 {
+    grid-area: project9;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 90vw;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.project-container img {
+    cursor: pointer;
+}
+
+
+
 
 #testimonials {
     height: auto;
@@ -510,6 +640,7 @@ section.white .button:hover {
     margin-top: .5rem;
 }
 
+
 .oval-top-left,
 .oval-bottom-right {
     position: absolute;
@@ -608,9 +739,13 @@ form textarea {
     background-color: #6236FF;
 }
 
-
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
+#form .accordion-container {
+    background-color: #eee;
+    
+    border-radius: 1rem;
+}
+#form .accordion {
+    border-radius: 1rem;
     background-color: #eee;
     color: #444;
     cursor: pointer;
@@ -620,33 +755,33 @@ form textarea {
     border: none;
     outline: none;
     transition: 0.4s;
-    font-size: 1rem;
+    font-size: 1rem;    
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
+#form.active,
 .accordion:hover {
     background-color: #ccc;
 }
 
-.panel {
+#form .panel {
     padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.4s ease;  /* Añadir la transición para el padding */
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    /* Añadir la transición para el padding */
     text-align: left;
 }
 
-.accordion:after {
-    content: '\02795';    
+#form .accordion:after {
+    content: '\02795';
     color: #777;
     float: right;
     margin-left: 5px;
 }
 
-.active:after {
-    content: "\02796";    
+#form .active:after {
+    content: "\02796";
 }
 
 #contact {
@@ -692,6 +827,93 @@ form textarea {
 }
 
 
+footer section {
+    height: auto;
+    background: #5B7CFD;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer section .content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+}
+
+footer section .content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+footer section .content a,
+footer section .content p.text {
+    font-weight: 400;
+    color: #eee;
+}
+
+footer section .content a {
+    font-size: 15px;
+}
+
+footer section .content .col1,
+footer section .content .col2,
+footer section .content .col3,
+footer section .content .col4 {
+    flex: 1;
+}
+
+footer section .content .col1 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-right: 3rem;
+}
+
+footer section .copyright {
+    width: 100%;
+    padding: 2rem 5rem;
+    border-top: 1px solid #DEDEDE;
+    text-align: center;
+}
+
+
+.logo {
+    z-index: 101;
+}
+
+.logo p {
+    color: white;
+    font-size: 1.875rem;
+    font-weight: 500;
+}
+
+.logo p span {
+    color: white;
+    font-weight: 700;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 4vw;
+}
+
+.menu a {
+    color: #ccc;
+}
+
+
+.menu a:hover {
+    color: white;
+}
+
+.menu .active {
+    color: white;
+    font-weight: 500;
+}
 
 @media screen and (max-width: 815px) {
     #hero {
@@ -769,8 +991,8 @@ form textarea {
 
 
     #cta {
-        min-height: 70vh;
-        gap: 3rem;
+        min-height: 80vh;
+        gap: 1rem;
     }
 
     #cta h2 {
@@ -778,8 +1000,39 @@ form textarea {
         padding: 0;
     }
 
+    #projects {
+        padding: 5rem 1rem 5vh 5vw;
+    }
+
+    #projects .buttons-select {
+        display: none;
+    }
+
+    .project-container {
+        width: 90%;        
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 1rem 1rem;
+        grid-template-areas:
+            "project1"
+            "project2"
+            "project3"
+            "project3"
+        ;
+    }
+
+    .project4,
+    .project5,
+    .project6,
+    .project7,
+    .project8,
+    .project9 {
+        display: none;
+    }
+
+
     #testimonials {
-        padding: 10vh 5vw;
+        padding: 5vh 5vw;
         align-items: center;
         justify-content: center;
     }
@@ -821,5 +1074,61 @@ form textarea {
         max-width: 90%;
     }
 
+    .oval-top-left,
+    .oval-bottom-right {
+        transform: none;;
+    }
+
+    #contact {
+        height: fit-content;
+        padding: 0;
+        text-align: left;
+    }
+
+    #contact .contact-containers {
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        padding: 5rem;
+        gap: 2rem;
+    }
+
+    footer section {
+        padding: 0;
+    }
+
+    footer section .content {
+        padding: 3rem 3rem;        
+    }
+
+    footer section .content .col1,
+    footer section .content .col2,
+    footer section .content .col3,
+    footer section .content .col4 {
+        flex: 1;
+        margin-right: 0;
+        gap: 1rem;        
+    }
+
+    footer section .content ul {
+        gap: .75rem;
+        margin-top: 2rem;
+    }
+
+    footer section .content ul a, 
+    footer .text {
+        font-size: .875rem;
+    }
+
+    footer section .content {
+        flex-wrap: wrap;
+    }
+
+    footer section .copyright {
+        width: 90%;
+        padding: 2rem 3rem;
+    }
 
 }
