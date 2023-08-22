@@ -143,12 +143,32 @@ button.select.active:hover {
     font-weight: 500;
 }
 
-#hero {
+#hero,
+#gracias {
     height: 120vh;
     padding: var(--main-padding);
     flex-direction: column;
     justify-content: center;
     text-align: center;
+}
+
+#gracias {
+    height: 100vh;
+}
+
+#gracias .contenido {
+    max-width: 32rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#gracias img{
+    width: 70%;
+    max-width: 300px;
+    margin-top: 2rem;
 }
 
 #fondo1 {
@@ -201,7 +221,8 @@ button.select.active:hover {
 
 #hero form #email,
 #hero form #phone,
-#hero form #submit {
+#hero form #submit,
+#gracias a {
     width: 100%;
     max-width: 32.5rem;
     border: none;
@@ -221,7 +242,8 @@ button.select.active:hover {
     font-weight: 500;
 }
 
-#hero form #submit {
+#hero form #submit,
+#gracias a {
     font-family: 'Roboto', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.125rem;
@@ -233,6 +255,11 @@ button.select.active:hover {
     cursor: pointer;
     transition: background-color 0.3s ease;
     padding: .5rem;
+}
+
+#gracias a {
+    margin-top: 1rem;
+    max-width: 20rem;
 }
 
 #hero form #submit:hover {
