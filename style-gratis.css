@@ -138,6 +138,11 @@ button.select.active:hover {
     background-color: rgba(91, 124, 253, 0.5);
 }
 
+#negrita {
+    color: white;
+    font-weight: 500;
+}
+
 #hero {
     height: 120vh;
     padding: var(--main-padding);
