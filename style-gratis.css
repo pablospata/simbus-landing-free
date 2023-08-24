@@ -221,7 +221,7 @@ button.select.active:hover {
 
 #hero form #email,
 #hero form #phone,
-#hero form #submit,
+#hero form a,
 #gracias a {
     width: 100%;
     max-width: 32.5rem;
@@ -242,7 +242,7 @@ button.select.active:hover {
     font-weight: 500;
 }
 
-#hero form #submit,
+#hero form a,
 #gracias a {
     font-family: 'Roboto', sans-serif;
     font-family: 'Open Sans', sans-serif;
@@ -262,7 +262,7 @@ button.select.active:hover {
     max-width: 20rem;
 }
 
-#hero form #submit:hover {
+#hero form a:hover {
     background-color: var(--color-acento-hover);
     border-color: var(--color-acento-hover);
 }
